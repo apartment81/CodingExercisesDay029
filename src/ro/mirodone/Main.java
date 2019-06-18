@@ -11,11 +11,12 @@ public class Main {
     public static void main(String[] args) {
 
         try {
-            File f = new File("C:\\Users\\euL\\IdeaProjects\\CodingExercisesDay029\\src\\ro\\mirodone\\simplewords.txt");
+
+            File f = new File("C:\\Users\\euL\\IdeaProjects\\CodingExercisesDay029\\src\\ro\\mirodone\\andrii.txt");
             Scanner sc;
             sc = new Scanner(f);
             // sc.useDelimiter("[^a-zA-Z']+");
-            Map<String, Integer> wordCount = new TreeMap<String, Integer>();
+            Map<String, Integer> wordCount = new TreeMap<>();
             while(sc.hasNext()) {
                 String word = sc.next();
                 if(!wordCount.containsKey(word))
